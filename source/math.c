@@ -10,7 +10,11 @@ int multiply(int a, int b) {
 }
 
 float divide(int a, int b) {
-  return (float) a / b;
+  if (b == 0) {
+    return 0.00;
+  } else {
+    return (float) a / b;
+  }
 }
 
 // Mean of an array
