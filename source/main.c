@@ -1,12 +1,11 @@
 #include <stdio.h>
-
-void myfunction(void) {
-  printf("Printed from a function\n");
-}
+#include "math.h"
 
 int main(void) {
-  printf("Hello World\n");
-  printf("%d\n%d\n", true, false);
-  myfunction();
-}
+  printf("New init \n");
 
+  int result = add(2, 3);
+  printf("Result: %d\n", result);
+
+  return 0;
+}

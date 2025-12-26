@@ -1,5 +1,9 @@
+#!/usr/bin/env bash
 echo "Building Program..."
-gcc source/main.c -o myprogram
-echo "Program Built and Running..."
-echo "============================"
-./myprogram
+if gcc source/*.c -o myprogram; then
+  echo "Program Built and Running..."
+  echo "============================"
+  ./myprogram
+else
+  echo "XXXXXXXXXX Error Building Program XXXXXXXXXX"
+fi
