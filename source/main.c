@@ -30,6 +30,7 @@ void ex_count(void) {
 void ex_excercises(void){
   exercise_p1_e1();
   exercise_p1_e2();
+  exercise_p1_e3();
 }
 
 void end_program(void) {
