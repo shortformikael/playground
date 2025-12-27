@@ -18,9 +18,9 @@ void print_string(char *a){
 }
 
 void print_int_pointer(int *a){
-  printf("Pointer with value %d at address %p", a, *a);
+  printf("Pointer with value %d at address %p\n", *a, (void *)a);
 }
 
 void print_double(double a){
-  printf("Double: %lf", a);
+  printf("Double: %lf\n", a);
 }

@@ -6,6 +6,10 @@ void ex_math(void) {
   print_int(add(2, 3));
   print_int(multiply(2, 3));
   print_float(divide(2, 3));
+
+  int x = 10;
+  print_int_pointer(&x);
+  printf("Here\n");
 }
 
 int main(void) {
