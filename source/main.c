@@ -6,7 +6,7 @@
 
 Counter *count;
 
-void ex_math(void) {  
+void ex_math(void) {
   print_int(add(2, 3));
   print_int(multiply(2, 3));
   print_float(divide(2, 3));
@@ -27,14 +27,16 @@ void ex_count(void) {
   print_int(counter_get(count));
 }
 
-void ex_excercises(void){
+void ex_excercises(void) {
   exercise_p1_e1();
   exercise_p1_e2();
   exercise_p1_e3();
+  exercise_p2_e1();
+  exercise_p4_e1();
 }
 
 void end_program(void) {
-  counter_kill(count); 
+  counter_kill(count);
 }
 
 int main(void) {

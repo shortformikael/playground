@@ -5,7 +5,7 @@ struct Counter {
   int value;
 };
 
-Counter* counter_create(int start) {
+Counter *counter_create(int start) {
   Counter *c = malloc(sizeof(Counter));
   c->value = start;
   return c;

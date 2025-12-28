@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "math.h"
 
-int add(int a, int b){
+int add(int a, int b) {
   return a + b;
 }
 
@@ -13,7 +13,7 @@ float divide(int a, int b) {
   if (b == 0) {
     return 0.00;
   } else {
-    return (float) a / b;
+    return (float)a / b;
   }
 }
 
