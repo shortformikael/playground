@@ -37,13 +37,14 @@ void exercise_p1_e2() {
   // Why? No clue, I need to look further into segmentation faults.
   // Why does malloc remove the segfault?
   // This creates a memory leak too.
-  q = &x;
+  *q = x; // This doesnt reference directly to X, only assume the CURRENT value.
   printf("Printing new pointer at \"x\" with value: %d\n", *q); // prints 45.
   printf("New pointer \"q\" is pointing at address: %p\n", (void *)q);
   // I have changed the value that the pointer is pointing at.
   // In theory. Couldn't I create a program that affects the memory of another?
   // Could I in theory map out the memory used by other programs?
-  // free(q);
+  free(q); // While referencing &x, it reference Stack memory, not heap
+  // However, i don't see a reason why q should access stack memory.
   printf("---------------------\n");
 }
 
